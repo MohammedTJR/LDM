@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookmarks xmlns="http://www.example.com/bookmarks">
+    <bookmark>
+        <name>Google</name>
+        <description>Buscador web.</description>
+        <url>https://www.google.com</url>
+    </bookmark>
+    <bookmark>
+        <name>Wikipedia</name>
+        <description>La enciclopedia libre.</description>
+        <url>https://www.wikipedia.org</url>
+    </bookmark>
+    <bookmark>
+        <name>W3C</name>
+        <description>World Wide Web Consortium</description>
+        <url> http://www.w3.org/</url>
+    </bookmark>
+</bookmarks>

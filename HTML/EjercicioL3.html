@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="La meua pàgina web" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="MOTJR" />
+    <meta name="viewport" content="width=device-width, initialscale=1, shrink-to-fit=no" />
+    <title> Ejercicio L3 </title>
+</head>
+
+<html>
+    <body>
+        <h1> Ejercicio 1: </h1>
+        
+        <h3> Campo númerico</h3>
+        
+        <input type="number" name="salario" min="1000" max="1000000" step="100" value="1000" />
+        
+        <h3> C.L.A.R </h3>
+        
+        <form>
+            <p>Escoja un precio mínimo:</p>
+            <input type="range" name="barra" min="10" max="5000" step="10" value="10" oninput="numero.value = this.value" />
+            <input type="number" name="numero" min="10" max="5000" step="10" value="10" oninput="barra.value = this.value" />
+        </form>
+        
+        <h3> Fecha y hora: </h3>
+        
+        <p><label> Fecha y hora local: <input type="datetimelocal" name="fecha y hora" /> </label></p>
+        <p><label> Mes: <input type="month" name="mes"></label></p>
+        <p><label> Hora: <input type="time" name="hora"></label></p>
+        <p><label> Semana: <input type="week" name="semana"></label></p>
+        
+        <br>
+        
+        <label> ¿Cuándo deseas comprarlo?
+            <input type="date" name="fecha de comra" min="2022-11-15" max="2030-12-31" step="1" /> </label>
+    </body>
+</html>

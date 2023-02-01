@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogo id="CDs en oferta">
+    <CD>
+        <Titulo>Still got the blues</Titulo>
+        <Artista>Gary Moore</Artista>
+        <Pais>UK</Pais>
+        <Compania_discografica>Virgin records</Compania_discografica>
+        <Precio>10.20</Precio>
+        <Ano_publicacion>1990</Ano_publicacion>
+    </CD>
+    <CD>
+        <Titulo>One night only</Titulo>
+        <Artista>Bee Gees</Artista>
+        <Pais>UK</Pais>
+        <Compania_discografica>Polydor</Compania_discografica>
+        <Precio>10.90</Precio>
+        <Ano_publicacion>1998</Ano_publicacion>
+    </CD>
+    <CD>
+        <Titulo>When a man loves a woman</Titulo>
+        <Artista>Percy Sledge</Artista>
+        <Pais>USA</Pais>
+        <Compania_discografica>Atlantic</Compania_discografica>
+        <Precio>8.70</Precio>
+        <Ano_publicacion>1987</Ano_publicacion>
+    </CD>
+    <CD>
+        <Titulo>Big Utile style</Titulo>
+        <Artista>Will Smith</Artista>
+        <Pais>USA</Pais>
+        <Compania_discografica>Columbia</Compania_discografica>
+        <Precio>9.90</Precio>
+        <Ano_publicacion>1997</Ano_publicacion>
+    </CD>
+    <CD>
+        <Titulo>La canción de Juan Perro</Titulo>
+        <Artista>Radio Futura</Artista>
+        <Pais>España</Pais>
+        <Compania_discografica>Sony Music-Ariola</Compania_discografica>
+        <Precio>9.90</Precio>
+        <Ano_publicacion>1987</Ano_publicacion>
+    </CD>
+    <CD>
+        <Titulo>The dock of the bay</Titulo>
+        <Artista>Otis Redding</Artista>
+        <Pais>USA</Pais>
+        <Compania_discografica>Atlantic</Compania_discografica>
+        <Precio>7.90</Precio>
+        <Ano_publicacion>1987</Ano_publicacion>
+    </CD>
+</catalogo>

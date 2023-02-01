@@ -1,0 +1,57 @@
+.par1 {
+    text-shadow: 4px 4px 5px red;
+}
+.par2 {
+    text-shadow: -2px -4px 5px yellow;
+}
+.par3 {
+    text-shadow: -4px 4px 5px yellow;
+}
+.par4 {
+    text-shadow: 4px -4px 5px yellow;
+}
+.par5 {
+    text-shadow: 1px 1px 1px red, 2px 2px 1px red;
+}
+.par6 {
+    text-align: left;
+}
+.par7 {
+    text-align: right;
+}
+.par8 {
+    text-align: center;
+}
+.par9 {
+    text-align: justify;
+}
+.par10 {
+    line-height: 0.8;
+}
+.par11 {
+    line-height: 1.2;
+}
+.par12 {
+    line-height: 1.6;
+}
+.par13 {
+    word-spacing: 10px;
+}
+.par14 {
+    letter-spacing: 5px;
+}
+.par15 {
+    font: italic normal bold normal 1.5em/1.5 Helvetica, Arial, sans-serif;
+}
+.par16 {
+    font: italic normal bold normal 1.5em/1.5 Helvetica, Arial, sans-serif;
+}
+.par17 {
+    font: bold normal 1.5em/1.5 Helvetica, Arial, sans-serif;
+}
+.par18 {
+    font: italic normal bold normal 1.5em/1.5 Helvetica, Arial, sans-serif;
+}
+.par19 {
+    font: italic normal bold normal 1.5em/1.5 Helvetica, Arial, sans-serif;
+}

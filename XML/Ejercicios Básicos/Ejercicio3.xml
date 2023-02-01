@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tabla>
+    <fila1>
+        <columna1>Nombre</columna1>
+        <columna2>Precio (en euros)</columna2>
+        <columna3>Descripción</columna3>
+        <columna4>Calorías</columna4>
+    </fila1>
+    <fila2>
+        <columna1>Gofres Belgas</columna1>
+        <columna2>5.95</columna2>
+        <columna3>Dos de nuestros famosos Gofres belgas con abundante sirope</columna3>
+        <columna4>650</columna4>
+    </fila2>
+    <fila3>
+        <columna1>Gofres Belgas con fresas</columna1>
+        <columna2>7.95</columna2>
+        <columna3>Ligeros gofres belgas cubiertos de fresas y nata montada</columna3>
+        <columna4>900</columna4>
+    </fila3>
+    <fila4>
+        <columna1>Gofres Begin con frutas del bosque</columna1>
+        <columna2>8.95</columna2>
+        <columna3>Ligeros gofres belgas cubiertos con frutas del bosque y nata montada</columna3>
+        <columna4>900</columna4>
+    </fila4>
+    <fila5>
+        <columna1>Tostada Francesa</columna1>
+        <columna2>4.50</columna2>
+        <columna3> Dos gruesas rebanadas de nuestro pan francés casero</columna3>
+        <columna4>600</columna4>
+    </fila5>
+    <fila6>
+        <columna1>Desayuno de la casa</columna1>
+        <columna2>6.95</columna2>
+        <columna3>Dos huevos, bacon o salchicha, tostada y patatas fritas</columna3>
+        <columna4>950</columna4>
+    </fila6>
+</tabla>

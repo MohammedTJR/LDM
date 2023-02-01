@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<nombre> Mohammed Said Touijar </nombre>
+<fecha-de-nacimiento>
+    <dia> 7 </dia>
+    <mes> 1 </mes>
+    <any> 2003 </any>
+</fecha-de-nacimiento>
+<residencia>
+    <Ciudad> Gandía. Valencia </Ciudad>
+    <País> España </País>
+</residencia>
+<Dades-de-contacte>
+    <Telefono> 603842135 </Telefono>
+    <Correo> med.touijar77@gmail.com </Correo>
+    <Linkedin> https://www.linkedin.com/in/mohammed-said-touijar-0651a4168/ </Linkedin>
+</Dades-de-contacte>
+<Descr> Estudiante del primer año de CFGS DAM deseoso de formar parte del mundo laboral y aprender acerca de la industria de la programacion y desarollo de software.</Descr>
+<Comp>
+    <Comp1 name= "Nivel A"> Capacidad para visualizar proyectos en la web </Comp1>
+    <Comp2 name= "Nivel M"> Dominio de lenguajes de programación </Comp2>
+    <Comp3 name= "Nivel A"> Buen dominio del inglés </Comp3>
+    <Comp4 name= "Nivel B"> Conocimientos sobre bases de datos </Comp4>
+    <Comp5 name= "Nivel A"> Conocimientos técnicos sobre informática </Comp5>
+</Comp>
+
+<education>
+    <qualification establishment="Jil Najah" type="Primaria" from="2008" to="2014"></qualification>
+    <qualification establishment="Al-Fadl" type="ESO" from="2014" to="2020"></qualification>
+    <qualification establishment="Universidad Abd el Malik Assaidi" type="Higher Education" from="2020" to="2022"></qualification>
+    <qualification establishment="IES MARÍA ENRIQUEZ" type="CFGS" from="2022" to="ongoing"></qualification>
+</education>
+
+<employment>
+    <experience
+        establishment="W2M"
+        job_title="Travel Agent"
+        from="Dic 2021"
+        to="Sep 2022">
+    </experience>
+</employment>

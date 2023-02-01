@@ -1,0 +1,112 @@
+.fuente1 {
+    font-family: arial;
+    color: blue;
+}
+.fuente2 {
+    font-family: serif;
+    color: black;
+}
+.fuente3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: brown;
+}
+.fuente4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: red;    
+}
+.fuente5 {
+    font-family: 'Courier New', Courier, monospace;
+    color: green;
+}
+
+
+.fuente6 {
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    color: blue;
+    font-size: 16px;
+}
+.fuente7 {
+    font-family: serif;
+    color: black;
+    font-size: 17px;
+}
+.fuente8 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: brown;
+    font-size: 18px;
+}
+.fuente9 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: red;
+    font-size: 19px;    
+}
+.fuente10 {
+    font-family: 'Courier New', Courier, monospace;
+    color: green;
+    font-size: 20px;
+}
+
+.html2 {    
+    font-size: 10px;
+}
+
+.fuente11 {
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    color: blue;
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: light;
+}
+.fuente12 {
+    font-family: serif;
+    color: black;
+    font-size: 1.2rem;
+    font-style: normal;
+    text-transform: uppercase;
+}
+.fuente13 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: brown;
+    font-size: 1.3rem;
+    font-style:oblique;
+    font-weight: bold;
+}
+.fuente14 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 1.4rem;
+    font-style:inherit;
+    text-decoration: line-through red wavy;    
+}
+.fuente15 {
+    font-family: 'Courier New', Courier, monospace;
+    color: green;
+    font-size: 1.5rem;
+    font-style:initial;
+    font-weight: 200;
+}
+.fuente16 {
+    font-family: 'Zen Dots', cursive;
+    font-size: 1.3rem;
+    color: red;
+}
+.fuente17 {
+    font-family: 'Kenia', cursive;
+    font-size: 1.3rem;
+    color: blue;
+}
+.fuente18 {
+    font-family: 'Nerko One', cursive;
+    font-size: 1.3rem;
+    color: orange;
+}
+.fuente19 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3rem;
+    color: blue;
+}
+.fuente20 {
+    font-family: 'Arvo', serif;
+    font-size: 1.3rem;
+    color: red;
+}

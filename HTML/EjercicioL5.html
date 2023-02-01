@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="La meua pàgina web" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="MOTJR" />
+    <meta name="viewport" content="width=device-width, initialscale=1, shrink-to-fit=no" />
+    <title> Ejercicio L5 </title>
+</head>
+
+<form action="contactar.php" method="get">
+    <h1> Formulario de contacto </h1>
+    <p> <strong> Obligatorio * </strong> . </p>
+    <section>
+        <fieldset>
+            <legend>
+                <h2> Informacion de contacto </h2>
+            </legend>
+            <fieldset>
+                <legend> Tratamiento </legend>
+                <label>
+                    <input type="radio" name="Motivo" value="Informe de errores" />Sr <br />
+                    <input type="radio" name="Motivo" value="Informe de errores" />Sra <br />
+                    <input type="radio" name="Motivo" value="Informe de errores" />Srta <br />
+                </label>
+            </fieldset>
+            <p> <label> Nombre: <input type="text" name="name" required /> * </label> </p>
+            <p> <label> Apellidos: <input type="text" name="last_name" required /> * </label> </p>
+            <p> <label> Correo electrónico: <input type="email" name="email" required /> * </label> </p>
+            <p> <label> Número de teléfono: <input type="tel" name="number" required /> * </label> </p>
+            <p> <label> Fecha de nacimiento: <input type="date" name="birth_date" required /> *
+                </label>
+            </p>
+            <p> <label> Breve descripción del problema:
+                    <textarea name="Incidencia" rows="1"></textarea>
+                </label>
+            </p>
+        </fieldset>
+    </section>
+    <p> <button type="submit"> Enviar </button> </p>
+</form>
+
+<form action="contactar.php" method="post">
+    <section>
+        <fieldset>
+            <legend>
+                <h2> Mensaje </h2>
+            </legend>
+            <p> <label> ¿Que quieres decir para saludar?: <input type="text" name="msg" />
+                </label> </p>
+            <p> <label> ¿A quién quieres saludar?: <input type="text" name="msg" />
+                </label> </p>
+        </fieldset>
+    </section>
+    <p> <button type="submit"> Enviar </button> </p>
+</form>

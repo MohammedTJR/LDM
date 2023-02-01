@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libros>
+    <libreria nombre="Librería Central">
+        <libro>
+            <codigo_ISBN>978-84-9838-907-3</codigo_ISBN>
+            <titulo>El Quijote</titulo>
+            <nivel_profundidad>Intermedio</nivel_profundidad>
+            <autores>
+                <autor>Miguel de Cervantes</autor>
+            </autores>
+            <editorial>Editorial Planeta</editorial>
+            <fecha_publicacion>29 de noviembre de 1605</fecha_publicacion>
+            <pagina_web>https://www.editorialplaneta.com/libros/el-quijote/</pagina_web>
+            <precio>15.99</precio>
+        </libro>
+        <libro>
+            <codigo_ISBN>978-84-376-0494-7</codigo_ISBN>
+            <titulo>Don Quijote de la Mancha</titulo>
+            <nivel_profundidad>Avanzado</nivel_profundidad>
+            <autores>
+                <autor>Miguel de Cervantes</autor>
+            </autores>
+            <editorial>Editorial Alianza</editorial>
+            <fecha_publicacion>1605</fecha_publicacion>
+            <pagina_web>https://www.editorialalianza.es/libros/don-quijote-de-la-mancha/</pagina_web>
+            <precio>18.99</precio>
+        </libro>
+        <libro>
+            <isbn>978-3-16-148411-7</isbn>
+            <titulo>Don Juan Tenorio</titulo>
+            <nivel>Intermedio</nivel>
+            <autores>
+                <autor>José Zorrilla</autor>
+            </autores>
+            <editorial>Editorial Zorrilla</editorial>
+            <fecha_publicacion>1844-01-01</fecha_publicacion>
+            <pagina_web>www.zorrilla.com/donjuan</pagina_web>
+            <precio>12.99</precio>
+        </libro>
+    </libreria>
+    <libreria nombre="Librería de Francisco de Goya">
+        <libro>
+            <codigo_ISBN>978-84-01-38248-4</codigo_ISBN>
+            <titulo>Cien años de soledad</titulo>
+            <nivel_profundidad>Avanzado</nivel_profundidad>
+            <autores>
+                <autor>Gabriel Garcia Marquez</autor>
+            </autores>
+            <editorial>Editorial Sudamericana</editorial>
+            <fecha_publicacion>1967-05-01</fecha_publicacion>
+            <pagina_web>www.editorialsudamericana.com/cien-anos-de-soledad</pagina_web>
+            <precio>20.99</precio>
+        </libro>
+        <libro>
+            <codigo_ISBN>978-0-7475-8294-7</codigo_ISBN>
+            <titulo>El Gran Gatsby</titulo>
+            <nivel_profundidad>Intermedio</nivel_profundidad>
+            <autores>
+                <autor>F. Scott Fitzgerald</autor>
+            </autores>
+            <editorial>Editorial Bloomsbury</editorial>
+            <fecha_publicacion>1925-04-10</fecha_publicacion>
+            <pagina_web>www.editorialbloomsbury.com/el-gran-gatsby</pagina_web>
+            <precio>17.99</precio>
+        </libro>
+        <libro>
+            <isbn>978-0-447-35775-7</isbn>
+            <titulo>Matar a un ruiseñor</titulo>
+            <nivel>Intermedio</nivel>
+            <autores>
+                <autor>Harper Lee</autor>
+            </autores>
+            <editorial>J. B. Lippincott and Co</editorial>
+            <fecha_publicacion>1960-07-11</fecha_publicacion>
+            <pagina_web>www.jblippincott.com/matar-a-un-ruisenor</pagina_web>
+            <precio>16.99</precio>
+        </libro>
+    </libreria>
+</libros>

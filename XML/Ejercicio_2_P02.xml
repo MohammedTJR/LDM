@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teams xmlns="http://www.example.com/teams">
+    <team>
+        <name>FC Barcelona</name>
+        <city>Barcelona</city>
+        <coach>Xavi</coach>
+        <players>
+            <player position="portero">
+                <name>Marc-André ter Stegen</name>
+                <nationality>Alemania</nationality>
+            </player>
+            <player position="defensa">
+                <name>Gerard Piqué</name>
+                <nationality>España</nationality>
+            </player>
+            <player position="medio">
+                <name>Sergio Busquets</name>
+                <nationality>España</nationality>
+            </player>
+            <player position="delantero">
+                <name>Robert Lewandowski</name>
+                <nationality>Polonia</nationality>
+            </player>
+        </players>
+    </team>
+    <team>
+        <name>Real Madrid FC</name>
+        <city>Madrid</city>
+        <coach>Carlo Ancelotti</coach>
+        <players>
+            <player position="portero">
+                <name>Thibaut Courtois</name>
+                <nationality>Bélgica</nationality>
+            </player>
+            <player position="defensa">
+                <name>Antonio Rüdiger</name>
+                <nationality>Alemania</nationality>
+            </player>
+            <player position="medio">
+                <name>Luka Modrić</name>
+                <nationality>Croacia</nationality>
+            </player>
+            <player position="delantero">
+                <name>Karim Benzema</name>
+                <nationality>Francia</nationality>
+            </player>
+        </players>
+    </team>
+</teams>

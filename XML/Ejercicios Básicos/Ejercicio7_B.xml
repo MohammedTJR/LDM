@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Recetas>
+    <Receta id="1">
+        <Titulo>Sopa de verduras</Titulo>
+        <Ingredientes>
+            <Ingrediente cantidad="1" unidad="kg">Papa</Ingrediente>
+            <Ingrediente cantidad="1/2" unidad="kg">Zanahoria</Ingrediente>
+            <Ingrediente cantidad="1/2" unidad="kg">Cebolla</Ingrediente>
+            <Ingrediente cantidad="1" unidad="kg">Puerro</Ingrediente>
+        </Ingredientes>
+        <Preparacion>
+            <Paso>Cortar las verduras en trozos pequeños.</Paso>
+            <Paso>Freír las verduras en una olla con un poco de aceite.</Paso>
+            <Paso>Añadir agua y dejar cocinar a fuego medio durante 30 minutos.</Paso>
+            <Paso>Añadir sal y pimienta al gusto.</Paso>
+        </Preparacion>
+    </Receta>
+    <Receta id="2">
+        <Título>Paella Valenciana</Título>
+        <Ingredientes>
+            <Ingrediente>Arroz</Ingrediente>
+            <Ingrediente>Agua</Ingrediente>
+            <Ingrediente>Pollo</Ingrediente>
+            <Ingrediente>Conejo</Ingrediente>
+            <Ingrediente>Gambas</Ingrediente>
+            <Ingrediente>Judía verde</Ingrediente>
+            <Ingrediente>Tomate</Ingrediente>
+            <Ingrediente>Azafrán</Ingrediente>
+        </Ingredientes>
+        <Preparacion>
+            <Paso>Cocer el arroz en agua con una pizca de sal durante 18 minutos.</Paso>
+            <Paso>Mientras tanto, saltear las verduras y las carnes en una paellera.</Paso>
+            <Paso>Añadir el arroz cocido y el azafrán al saltear.</Paso>
+            <Paso>Dejar cocer todo junto a fuego medio durante 15 minutos.</Paso>
+        </Preparacion>
+    </Receta>
+</Recetas>

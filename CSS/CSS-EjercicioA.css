@@ -1,0 +1,38 @@
+h1 {
+    color: blue;
+}
+p {
+    color: plum;
+}
+    .grupo-a {
+        list-style-type: none;
+        color: purple;
+        }
+    .grupo-b {
+        list-style-type: disc;
+        color: red;
+        }
+    .grupo-c {
+        list-style-type: circle;
+        color: cyan;
+        }
+    .grupo-d {
+        list-style-type: square;
+        color: blue;
+        }
+    .grupo-e {
+        list-style-type: upper-roman;
+        color: red;
+        }
+    .grupo-f {
+        list-style-type: lower-greek;
+        color: green;
+        }
+    .grupo-g {
+        list-style-type: lower-alpha;
+        color: grey;
+        }
+    .grupo-h {
+        list-style-type: upper-alpha;
+        color: red;
+        }                
