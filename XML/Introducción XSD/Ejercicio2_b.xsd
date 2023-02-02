@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="medida">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="peso" type="xs:decimal">
+                    <xs:complexType>
+                        <xs:restriction base="xs:decimal">
+                            <xs:minInclusive value="0.0"/>
+                            <xs:maxInclusive value="1000.0"/>
+                        </xs:restriction>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

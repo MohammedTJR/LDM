@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="trabajador">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string"/>
+                <xs:element name="edad" type="xs:integer">
+                    <xs:complexType>
+                        <xs:restriction base="xs:integer">
+                            <xs:minInclusive value="16"/>
+                            <xs:maxInclusive value="65"/>
+                        </xs:restriction>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
