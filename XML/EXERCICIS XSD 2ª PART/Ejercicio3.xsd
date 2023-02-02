@@ -1,0 +1,57 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="biblioteca" type="tBiblioteca"/>
+  <xs:complexType name="tBiblioteca">
+    <xs:sequence>
+      <xs:element name="libro" type="tLibro" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tLibro">
+    <xs:sequence>
+      <xs:element name="titol" type="tNom"/>
+      <xs:element name="autor" type="tNom" minOccurs="1" maxOccurs="unbounded"/>
+      <xs:element name="fecha" type="tFecha"/>
+      <xs:element name="ISBN" type="tISBN"/>
+      <xs:element name="editor" type="tNom"/>
+    </xs:sequence>
+    <xs:attribute name="categoria" type="xs:string" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="autobiografía"/>
+          <xs:enumeration value="noficcio"/>
+          <xs:enumeration value="ficcio"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="enstock" type="xs:boolean" default="false"/>
+    <xs:attribute name="traductor" type="xs:string"/>
+  </xs:complexType>
+  <xs:simpleType name="tNom">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0"/>
+      <xs:maxLength value="100"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="tISBN">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="5"/>
+      <xs:maxLength value="8"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="tFecha">
+    <xs:sequence>
+      <xs:element name="mes" type="tMes" minOccurs="0"/>
+      <xs:element name="año" type="tAny"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="tMes">
+    <xs:restriction base="xs:positiveInteger">
+      <xs:minInclusive value="1"/>
+      <xs:maxInclusive value="12"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="tAny">
+    <xs:restriction base="xs:positiveInteger">
+      <xs:maxInclusive value="2023"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

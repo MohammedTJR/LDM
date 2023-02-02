@@ -1,0 +1,15 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="producto" type="xs:string">
+    <xs:complexType>
+      <xs:attribute name="cantidad" type="xs:positiveInteger" use="required"/>
+      <xs:attribute name="unidad">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="cajas"/>
+            <xs:enumeration value="palés"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

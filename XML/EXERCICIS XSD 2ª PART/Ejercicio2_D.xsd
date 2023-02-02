@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="matricula">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="personal" type="tPersonal"/>
+        <xs:element name="pago" type="tPagament"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="tPersonal">
+    <xs:sequence>
+      <xs:element name="dni" type="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:length value="9"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="nombre" type="xs:string"/>
+      <xs:element name="titulacio" type="xs:string"/>
+      <xs:element name="curso_academic" type="xs:string"/>
+      <xs:element name="domicilios">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="domicilio" maxOccurs="2" minOccurs="1" type="xs:string">
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:string">
+                    <xs:attribute name="tipo" type="xs:string" use="required"/>
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="tPagament">
+    <xs:sequence>
+      <xs:element name="tipo_matricula" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

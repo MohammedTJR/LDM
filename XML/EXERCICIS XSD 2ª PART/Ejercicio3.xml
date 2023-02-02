@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="Ejercicio3.xsd">
+<libro categoria="noficcio" enstock="true" traductor="Joan Ros">
+<titol>Alfagann se Flanagan</titol>
+<autor>Jaume Ribera</autor>
+<autor>Andreu Marti</autor>
+<fecha>
+<mes>10</mes>
+<año>2015</año>
+</fecha>
+<ISBN>9926223</ISBN>
+<editor>Debate</editor>
+</libro>
+<libro categoria="ficcio" enstock="false">
+<titol>Sapiens</titol>
+<autor>Yuval Harari</autor>
+<fecha>
+<año>2009</año>
+</fecha>
+<ISBN>66784726</ISBN>
+<editor>Anaya</editor>
+</libro>
+</biblioteca>
