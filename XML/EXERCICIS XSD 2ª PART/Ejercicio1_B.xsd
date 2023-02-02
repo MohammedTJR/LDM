@@ -1,15 +1,15 @@
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="cliente">
-    <xs:complexType>
-      <xs:simpleContent>
-        <xs:extension base="xs:string">
-          <xs:attribute name="código" type="xs:integer" use="required">
-            <xs:pattern value="[0-9]{6}"/>
-          </xs:attribute>
-          <xs:attribute name="habitual" type="xs:boolean" default="false"/>
-          <xs:attribute name="cantidad" type="xs:decimal" minInclusive="0" maxInclusive="1000"/>
-        </xs:extension>
-      </xs:simpleContent>
-    </xs:complexType>
-  </xs:element>
-</xs:schema>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="cliente">
+    <xsd:complexType>
+      <xsd:simpleContent>
+        <xsd:extension base="xsd:string">
+          <xsd:attribute name="código" type="xsd:integer" use="required">
+            <xsd:pattern value="[0-9]{6}"/>
+          </xsd:attribute>
+          <xsd:attribute name="habitual" type="xsd:boolean" default="false"/>
+          <xsd:attribute name="cantidad" type="xsd:decimal" minInclusive="0" maxInclusive="1000"/>
+        </xsd:extension>
+      </xsd:simpleContent>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>
