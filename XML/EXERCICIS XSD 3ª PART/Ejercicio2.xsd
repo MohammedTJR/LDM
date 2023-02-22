@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="tipusText">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="5" />
+            <xs:maxLength value="20" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipusArticle">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Llibre" />
+            <xs:enumeration value="DVD" />
+            <xs:enumeration value="Varis" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipusPreu">
+        <xs:restriction base="xs:decimal">
+            <xs:minExclusive value="0" />
+            <xs:maxInclusive value="999" />
+            <xs:totalDigits value="5" />
+            <xs:fractionDigits value="2" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:attribute name="número" type="xs:positiveInteger" use="required" />
+    <xs:attribute name="data" type="xs:date" use="required" />
+    <xs:attribute name="moneda" type="xs:string" fixed="Euro" />
+
+    <xs:element name="factura">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="dades-emissor">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nom" type="tipusText" />
+                            <xs:element name="cif">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="\d{8}-[A-Z]" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="telefon">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="\d{9}" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="dades-client">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nom" type="tipusText" />
+                            <xs:element name="cif">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="\d{8}-[A-Z]" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="telefon">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="\d{9}" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                    <xs:element name="detall-factura">
+                        <xs:complexType>
+                          <xs:sequence minOccurs="1" maxOccurs="15">
+                            <xs:element name="linea">
+                              <xs:complexType>
+                                <xs:sequence>
+                                  <xs:element name="descripcio" type="tipusText"/>
+                                  <xs:element name="quantitat" type="xs:positiveInteger"/>
+                                  <xs:element name="oferta" type="emptyType" minOccurs="0"/>
+                                  <xs:element name="pvp" type="tipusPreu"/>
+                                </xs:sequence>
+                                <xs:attribute name="codi-article" type="xs:string" use="required"/>
+                                <xs:attribute name="tipus" type="tipusArticle"/>
+                              </xs:complexType>
+                            </xs:element>
+                          </xs:sequence>
+                          <xs:attribute name="import" type="tipusPreu" use="required"/>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>                    
+                      

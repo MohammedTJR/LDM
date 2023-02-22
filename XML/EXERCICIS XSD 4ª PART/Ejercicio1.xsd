@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <xs:complexType name="tipusPersona">
+        <xs:sequence>
+            <xs:element name="cognoms-i-nom" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="email" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="connexions" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="connexio" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:simpleContent>
+                                    <xs:extension base="xs:integer">
+                                        <xs:attribute name="data" type="xs:date" use="required"/>
+                                        <xs:attribute name="hora" type="xs:time" use="required"/>
+                                    </xs:extension>
+                                </xs:simpleContent>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="tipusEmpleat">
+        <xs:complexContent>
+            <xs:extension base="tipusPersona">
+                <xs:sequence>
+                    <xs:element name="departament" minOccurs="1" maxOccurs="1">
+                        <xs:complexType>
+                            <xs:choice>
+                                <xs:element name="administracio" type="xs:boolean"/>
+                                <xs:element name="informatica" type="xs:boolean"/>
+                                <xs:element name="marketing" type="xs:boolean"/>
+                            </xs:choice>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    
+    <xs:element name="usuari" type="tipusPersona"/>
+    <xs:element name="empleat" type="tipusEmpleat"/>
+    
+    <xs:attribute name="identificador">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[UE][0-9]{1,5}"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+    
+    <xs:element name="registre">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                    <xs:element ref="usuari"/>
+                    <xs:element ref="empleat"/>
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+</xs:schema>
