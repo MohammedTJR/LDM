@@ -1,0 +1,17 @@
+/ies/nom
+
+//web/text()
+
+//cicle/nom/text()
+
+//@id
+
+//@any
+
+//cicle[grau='Mitjà']
+
+//nombre[../grau="Superior"]
+
+//nombre[../decretTitol/@any<2010]/text()
+
+//nombre[../decretTitol/@any=2010]/text() or //nombre[../decretTitol/@any=2008]/text()
