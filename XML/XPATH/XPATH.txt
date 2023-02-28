@@ -1,0 +1,45 @@
+Ejercicio 1:
+
+/ies/nom
+
+//web/text()
+
+//cicle/nom/text()
+
+//@id
+
+//@any
+
+//cicle[grau='Mitjà']
+
+//nombre[../grau='Superior']
+
+//nombre[../decretTitol/@any<2010]/text()
+
+//nombre[../decretTitol/@any=2010]/text() or //nombre[../decretTitol/@any=2008]/text()
+
+Ejercicio 2:
+
+//modul/nom/text()
+
+//nom[../cicle='ASIX']/text()
+
+//nom[../curs=2]/text()
+
+//nom[../horesSetmanals<5]/text()
+
+//nom[../curs=1]/text() and //nom[../cicle='ASIX']/text()
+
+//horesSetmanals[../horesSetmanals>3]/text()
+
+Ejercicio 3:
+
+//modul[cicle='SMX']/nom
+
+//cicle[modul[nom='lenguatges de marques i sistemes de gestió d'informació']]/nom
+
+//modul[../cicles/cicle/grau='Superior']/nom
+
+//modul[cicle/@id = //cicle/decretTitol[@any = '2008']/../@id]/nom
+
+//cicle[modul/curs = 1]/grau
