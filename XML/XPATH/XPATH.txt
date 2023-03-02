@@ -20,7 +20,7 @@ Ejercicio 1:
 
 Ejercicio 2:
 
-//modul/nom/text()
+//nom/text()
 
 //nom[../cicle='ASIX']/text()
 
@@ -30,11 +30,11 @@ Ejercicio 2:
 
 //nom[../curs=1]/text() and //nom[../cicle='ASIX']/text()
 
-//horesSetmanals[../horesSetmanals>3]/text()
+//horesSetmanals[.>3]/text()
 
 Ejercicio 3:
 
-//modul[cicle='SMX']/nom
+//cicle[nom='Sistemes Microinformatics i Xarxes']/@id
 
 //cicle[modul[nom='lenguatges de marques i sistemes de gestió d'informació']]/nom
 
