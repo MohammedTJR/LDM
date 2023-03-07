@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+<xsl:strip-space elements="*" />
 
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-<xsl:output method="xml" indent="yes"/>
 <xsl:template match="/">
-<museus>
-<xsl:apply-templates select="museus/museu"/>
-</museus>
+  <museos>
+    <xsl:apply-templates />
+  </museos>
 </xsl:template>
-<xsl:template match="museu">
-<museu>
-<nom>
-<xsl:value-of select="@nom"/>
-</nom>
-<ciutat>
-<xsl:value-of select="@ciutat"/>
-</ciutat>
-<pais>
-<xsl:value-of select="@pais"/>
-</pais>
-</museu>
+
+<xsl:template match="museo">
+  <museo>
+    <nombre><xsl:value-of select="@nombre" /></nombre>
+    <ciudad><xsl:value-of select="@ciudad" /></ciudad>
+    <pais><xsl:value-of select="@pais" /></pais>
+  </museo>
 </xsl:template>
+
 </xsl:stylesheet>

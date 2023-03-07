@@ -3,17 +3,17 @@
 <xsl:strip-space elements="*" />
 
 <xsl:template match="/">
-  <ciudades>
+  <lugares>
     <xsl:apply-templates />
-  </ciudades>
+  </lugares>
 </xsl:template>
 
 <xsl:template match="museo">
-  <ciudad>
-    <xsl:attribute name="nombre"><xsl:value-of select="@ciudad" /></xsl:attribute>
-    <pais><xsl:value-of select="@pais" /></pais>
-    <museo><xsl:value-of select="@nombre" /></museo>
-  </ciudad>
+  <lugar tipo="museo">
+    <ubicacion nombre="ciudad"><xsl:value-of select="@ciudad" /></ubicacion>
+    <ubicacion nombre="pais"><xsl:value-of select="@pais" /></ubicacion>
+    <nombre><xsl:value-of select="@nombre" /></nombre>
+  </lugar>
 </xsl:template>
 
 </xsl:stylesheet>
