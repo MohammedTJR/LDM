@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<listin>
+    <persona id="A12" sexo= "mujer">
+        <nombre></nombre>
+        <email></email>
+        <relacion amigo-de="A12" enemigo-de="A12"/>
+    </persona>
+</listin>
