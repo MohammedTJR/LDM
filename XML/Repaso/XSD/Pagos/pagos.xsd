@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="pagos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" default="A" maxOccurs="3"/>
+                <xs:element name="fechaNacimiento" maxOccurs="unbounded"/>
+                <xs:element name="hora" type="xs:time" maxOccurs="unbounded"/>
+                <xs:element name="precio"/>
+                <xs:element name="cantidad" fixed="678"/>
+                <xs:element name="pagado" type="xs:boolean" default="false"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
