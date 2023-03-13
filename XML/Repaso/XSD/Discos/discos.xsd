@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="discos">
+        <xs:complexType>
+            <xs:sequence>            
+                <xs:element ref="grupo" maxOccurs="unbounded"/>
+                <xs:element ref="disco" maxOccurs="unbounded"/>                
+        </xs:sequence>
+        </xs:complexType>        
+    </xs:element>
+    <xs:element name="grupo">
+        <xs:complexType>
+            <xs:sequence>            
+                <xs:element name="nombre"/> 
+                <xs:element name="miembro" maxOccurs="unbounded"/> 
+                <xs:element name="nacionalidad" minOccurs="0"/>
+                <xs:element name="web" minOccurs="0"/> 
+                <xs:element name="email" minOccurs="0"/>
+                <xs:choice>
+                    <xs:element name="calle" minOccurs="0"/>   
+                    <xs:element name="localidad" minOccurs="0"/> 
+                </xs:choice>                                  
+            </xs:sequence>
+            <xs:attribute name="nom"></xs:attribute>
+        </xs:complexType>        
+    </xs:element>
+    <xs:element name="disco">
+        <xs:complexType>
+            <xs:sequence>            
+                <xs:element name="interprete"/>
+                <xs:element name="titulo" />
+                <xs:element ref="discografica" minOccurs="0"/>
+                <xs:element ref="anio"/>
+                <xs:element name="stock"/>                        
+        </xs:sequence>
+        <xs:attribute name="precio" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="[0-9][0-9]*.[0-9][0-9]*"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        </xs:complexType>                
+    </xs:element>
+    <xs:element name="discografica" default="CBS">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Sony"/>
+                <xs:enumeration value="CBS"/>
+                <xs:enumeration value="SIRE"/>
+                <xs:enumeration value="OTRAS"/>
+            </xs:restriction>
+        </xs:simpleType>        
+    </xs:element>
+    <xs:element name="anio">
+        <xs:simpleType>
+            <xs:restriction base="xs:integer">                
+                <xs:minInclusive value="1000"/>
+                <xs:maxInclusive value="9999"/>
+            </xs:restriction>
+        </xs:simpleType>       
+    </xs:element>
+</xs:schema>
